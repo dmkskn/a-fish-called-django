@@ -1,5 +1,5 @@
 function django -d "Use the command `django` instead of `python manage.py` or `django-admin`"
-    if not command -v django-admin
+    if not command -v django-admin &>/dev/null
         echo "Django has not been found."
         return 127
     end
